@@ -1,2 +1,2 @@
 # CLASES
-Introducción a POO, clases, objetos y constructores
+EL EJERCICIO DE LA TAREA 2 SE ENCUENTRA EN LA CLASE JUGADORES

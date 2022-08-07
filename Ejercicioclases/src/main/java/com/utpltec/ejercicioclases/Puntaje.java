@@ -17,7 +17,7 @@ public class Puntaje {
     public int Marcador;
     
     //Constructores 
-    public Puntaje(){
+    public Puntaje(String su_puntaje_es){
     }
     public Puntaje(String NombresJugadores, int NúmeroParticipantes, int Marcador){
         this.NombresJugadores = NombresJugadores;
@@ -48,5 +48,20 @@ public class Puntaje {
     public void setMarcador(int Marcador) {
         this.Marcador = Marcador;
     }
+      public void puntajeasignado(){ 
+        System.out.println("El puntaje asignado es" + this.Marcador );
+    }
+        //Colecciones        
+        public static void main(String[] args) {
+        Arraylist<Puntaje> ColeccionPuntajesAsignados = new Arraylist<>();
 
+        Puntaje Puntaje1 = new Puntaje("Su puntaje es");
+
+        ColeccionPuntajesAsignados.add(Puntaje1);
+
+        for (int i = 0; 1 < ColeccionPuntajesAsignados.size(); i++) {
+            Puntaje puntaje = ColeccionPuntajesAsignados.get(i);
+            puntaje.puntajeasignado ();
+        }
+    }
 }

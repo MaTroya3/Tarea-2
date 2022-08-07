@@ -47,6 +47,22 @@ public class JuegoOnline {
 
     public void setAlmacenamiento(int Almacenamiento) {
         this.Almacenamiento = Almacenamiento;
-    
+     
+    public void identificaciondeljuego(){ 
+        System.out.println("Este juego es" + this.Nombre1 );
     }
+        //Colecciones        
+        public static void main(String[] args) {
+        Arraylist<Juegos> Coleccionjuegosonline = new Arraylist<>();
+
+        Juegos JuegoOnline1 = new Juegos("FreeFire");
+
+        Coleccionjuegosonline.add(JuegoOnline1);
+
+        for (int i = 0; 1 < Coleccionjuegosonline.size(); i++) {
+            Juegos juego1 = Coleccionjuegosonline.get(i);
+            juego1.identificaciondeljuego ();
+        }
+    }
+
 }
